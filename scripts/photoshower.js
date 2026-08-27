@@ -4,6 +4,9 @@ const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-image");
 const closeBtn = document.getElementById("close-modal");
 const openImg = document.getElementById("imagelink");
+// consts for download
+const downloadBtn = document.getElementById("download-btn");
+const modalImage = document.getElementById("imagelink");
 
 triggers.forEach((trigger) => {
   trigger.addEventListener("click", function () {
@@ -38,4 +41,47 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     closeModal();
   }
+});
+
+//logic for download
+
+downloadBtn.addEventListener("click", function () {
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+
+  canvas.width = modalImage.naturalWidth;
+  canvas.height = modalImage.naturalHeight;
+
+  ctx.drawImage(modalImage, 0, 0);
+
+  const fontSize = canvas.width * 0.03;
+  ctx.font = `bold ${fontSize}px Arial`;
+  ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
+
+  ctx.shadowColor = "rgba(0, 0, 0, 0.8)";
+  ctx.shadowBlur = 5;
+  ctx.shadowOffsetX = 2;
+  ctx.shadowOffsetY = 2;
+
+  ctx.textAlign = "right";
+  ctx.textBaseline = "bottom";
+  const padding = canvas.width * 0.02;
+
+  ctx.fillText(
+    "© Dylan Seifert",
+    canvas.width - padding,
+    canvas.height - padding,
+  );
+
+  const watermarkedDataUrl = canvas.toDataURL("image/jpeg", 0.9);
+
+  const tempLink = document.createElement("a");
+  tempLink.href = watermarkedDataUrl;
+
+  const originalSrc = modalImage.src.split("/").pop() || "image";
+  tempLink.download = `watermarked-${originalSrc}`;
+
+  document.body.appendChild(tempLink);
+  tempLink.click();
+  document.body.removeChild(tempLink);
 });

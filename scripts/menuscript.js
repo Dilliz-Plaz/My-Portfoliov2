@@ -20,3 +20,9 @@ menubtn.addEventListener("click", () => {
     }, 300);
   }
 });
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    menu.classList.add("hidden");
+  }
+});
