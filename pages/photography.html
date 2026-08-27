@@ -68,49 +68,131 @@
       <div class="">
         <i
           id="menubtn"
-          class="ph ph-list text-5xl absolute z-100 right-2 hover:rotate-90 transition duration-200"
+          class="ph ph-list text-5xl absolute right-2 hover:rotate-90 transition duration-200"
         ></i>
       </div>
     </header>
     <section>
-      <div class="flex flex-wrap gap-20 justify-center-safe">
-        <div>
+      <div class="flex flex-wrap gap-20 justify-center-safe overflow-x-clip">
+        <div class="-rotate-3 relative inline-block">
           <img
             src="../assets/photos/02030559-EDIT.jpg"
             alt="Photo of green car"
-            class="border-10 border-b-100 -rotate-3 size-100 object-cover"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
           />
+          <button>
+            <i
+              class="ph ph-arrows-out js-popup-trigger absolute bottom-32 right-4 text-2xl text-gray-700 cursor-pointer hover:text-black"
+            ></i>
+          </button>
         </div>
-        <div class="relative">
+        <div class="rotate-15 relative inline-block">
           <img
             src="../assets/photos/02030613.JPG"
-            alt="Sample landscape photo"
-            class="border-10 border-b-100 rotate-5 size-100 object-cover"
+            alt="BC Ferry Worker"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
           />
-          <i id="arrows-out" class="text-2xl text-red-600"></i>
+          <button>
+            <i
+              class="ph ph-arrows-out js-popup-trigger absolute bottom-32 right-4 text-2xl text-gray-700 cursor-pointer hover:text-black"
+            ></i>
+          </button>
         </div>
-        <div class="">
+        <div class="rotate-3 relative inline-block">
           <img
-            src="https://picsum.photos/400/300"
-            alt="Sample landscape photo"
-            class="border-10 border-b-100 -rotate-7 size-100 object-cover"
+            src="../assets/photos/IMG_0771-EDIT.jpg"
+            alt="A crow B&W"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
           />
+          <button>
+            <i
+              class="ph ph-arrows-out js-popup-trigger absolute bottom-32 right-4 text-2xl text-gray-700 cursor-pointer hover:text-black"
+            ></i>
+          </button>
         </div>
-        <div class="">
+        <div class="-rotate-15 relative inline-block">
           <img
-            src="https://picsum.photos/400/300"
-            alt="Sample landscape photo"
-            class="border-10 border-b-100 rotate-9 size-100 object-cover"
+            src="../assets/photos/IMG_0795.JPG"
+            alt="A brown horse"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
           />
+          <button>
+            <i
+              class="ph ph-arrows-out absolute bottom-32 right-4 text-2xl text-gray-700 hover:text-black"
+            ></i>
+          </button>
         </div>
-        <div class="">
+        <div class="rotate-4 relative inline-block">
           <img
-            src="https://picsum.photos/400/300"
-            alt="Sample landscape photo"
-            class="border-10 border-b-100 -rotate-4 size-100 object-cover"
+            src="../assets/photos/IMG_2029.JPG"
+            alt="A photo of lighting. Highly edited"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
           />
+          <button>
+            <i
+              class="ph ph-arrows-out js-popup-trigger absolute bottom-32 right-4 text-2xl text-gray-700 cursor-pointer hover:text-black"
+            ></i>
+          </button>
         </div>
+        <div class="rotate-4 relative inline-block">
+          <img
+            src="../assets/photos/SAM_0098.JPG"
+            alt="A photo of lighting. Highly edited"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
+          />
+          <button>
+            <i
+              class="ph ph-arrows-out js-popup-trigger absolute bottom-32 right-4 text-2xl text-gray-700 cursor-pointer hover:text-black"
+            ></i>
+          </button>
+        </div>
+        <div class="rotate-4 relative inline-block">
+          <img
+            src="../assets/photos/SAM_0257.JPG"
+            alt="A photo of lighting. Highly edited"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
+          />
+          <button>
+            <i
+              class="ph ph-arrows-out js-popup-trigger absolute bottom-32 right-4 text-2xl text-gray-700 cursor-pointer hover:text-black"
+            ></i>
+          </button>
+        </div>
+        <div class="rotate-4 relative inline-block">
+          <img
+            src="../assets/photos/IMG_0153.HEIC"
+            alt="A photo of lighting. Highly edited"
+            class="border-10 border-b-100 size-100 object-cover js-popup-trigger cursor-pointer"
+          />
+          <button>
+            <i
+              class="ph ph-arrows-out js-popup-trigger absolute bottom-32 right-4 text-2xl text-gray-700 cursor-pointer hover:text-black"
+            ></i>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="modal"
+        class="hidden fixed inset-0 z-10 bg-black/70 items-center p-4"
+      >
+        <button
+          id="close-modal"
+          class="absolute top-6 right- text-white text-4xl hover:text-gray-300 cursor-pointer p-2"
+        >
+          <i class="ph ph-x"></i>
+        </button>
+        <a id="imagelink" target="_blank" rel="noopener noreferrer"
+          ><img
+            id="modal-image"
+            src=""
+            alt=""
+            class="max-w-full max-h-full object-contain rounded-lg shadow-2xl z-100 object-center"
+          />
+        </a>
       </div>
     </section>
   </body>
+  <script src="../scripts/photoshower.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
 </html>
