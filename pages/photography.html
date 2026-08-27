@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="/Website logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Photography</title>
+  </head>
+  <body class="bg-[url('../../assets/picnicpattern.png')] bg-repeat bg-size-[]">
+    <nav
+      id="menu"
+      class="font-[edu_nsw_act_cursive] z-50 text-center transition duration-300 opacity-0 hidden"
+    >
+      <div class="fixed top-0 right-0 z-50 bg-black/70 w-100 h-screen">
+        <h2 class="text-white p-10 text-5xl font-bold underline">Legend</h2>
+        <ul class="text-2xl font-[roboto] text-white">
+          <li>
+            <a
+              href="../index.html"
+              class="hover:underline hover:text-blue-600 hover:font-bold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/gaming.html"
+              class="hover:underline hover:text-green-600 hover:font-bold"
+              >Games</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/links.html"
+              class="hover:underline hover:text-purple-600 hover:font-bold"
+              >Links</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/Experience.html"
+              class="hover:underline hover:text-blue-600 hover:font-bold"
+              >Experience</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="flex flex-row relative py-6 justify-center">
+      <h1 class="text-8xl font-black font-['Chewy']">Photography</h1>
+      <div class="">
+        <i
+          id="menubtn"
+          class="ph ph-list text-5xl absolute z-100 right-2 hover:rotate-90 transition duration-200"
+        ></i>
+      </div>
+    </header>
+    <section>
+      <div class="flex flex-wrap gap-20 justify-center-safe">
+        <div>
+          <img
+            src="../assets/photos/02030559-EDIT.jpg"
+            alt="Photo of green car"
+            class="border-10 border-b-100 -rotate-3 size-100 object-cover"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="../assets/photos/02030613.JPG"
+            alt="Sample landscape photo"
+            class="border-10 border-b-100 rotate-5 size-100 object-cover"
+          />
+          <i id="arrows-out" class="text-2xl text-red-600"></i>
+        </div>
+        <div class="">
+          <img
+            src="https://picsum.photos/400/300"
+            alt="Sample landscape photo"
+            class="border-10 border-b-100 -rotate-7 size-100 object-cover"
+          />
+        </div>
+        <div class="">
+          <img
+            src="https://picsum.photos/400/300"
+            alt="Sample landscape photo"
+            class="border-10 border-b-100 rotate-9 size-100 object-cover"
+          />
+        </div>
+        <div class="">
+          <img
+            src="https://picsum.photos/400/300"
+            alt="Sample landscape photo"
+            class="border-10 border-b-100 -rotate-4 size-100 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
