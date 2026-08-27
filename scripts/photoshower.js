@@ -3,7 +3,6 @@ const triggers = document.querySelectorAll(".js-popup-trigger");
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-image");
 const closeBtn = document.getElementById("close-modal");
-const openImg = document.getElementById("imagelink");
 // consts for download
 const downloadBtn = document.getElementById("download-btn");
 const modalImage = document.getElementById("imagelink");
@@ -16,7 +15,6 @@ triggers.forEach((trigger) => {
 
     modalImg.src = imgTarget.src;
     modalImg.alt = imgTarget.alt;
-    openImg.href = imgTarget.src;
 
     modal.classList.remove("hidden");
     modal.classList.add("flex");
