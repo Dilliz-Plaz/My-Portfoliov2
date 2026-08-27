@@ -4,8 +4,8 @@ const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-image");
 const closeBtn = document.getElementById("close-modal");
 // consts for download
-const downloadBtn = document.getElementById("download-btn");
-const modalImage = document.getElementById("imagelink");
+const downloadBtn = document.getElementById("imagelink");
+const modalImage = document.getElementById("modal-image");
 
 triggers.forEach((trigger) => {
   trigger.addEventListener("click", function () {

@@ -4,6 +4,7 @@ const menu = document.getElementById("menu");
 menubtn.addEventListener("click", () => {
   menubtn.classList.toggle("text-white");
   menubtn.classList.toggle("rotate-90");
+  menubtn.classList.toggle("z-100");
 
   if (menu.classList.contains("hidden")) {
     menu.classList.remove("hidden");
