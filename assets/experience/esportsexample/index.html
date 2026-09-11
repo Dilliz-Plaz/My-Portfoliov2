@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @font-face {
+        font-family: "LOLFont";
+        src: url("./fonts/Friz\ Quadrata\ Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "LOLFont";
+        src: url("./fonts/Friz\ Quadrata\ Bold.otf") format("opentype");
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "LOLFont";
+        src: url("./fonts/Friz\ Quadrata\ Italic.ttf") format("truetype");
+        font-weight: normal;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: "LOLFont";
+        src: url("./fonts/Friz\ Quadrata\ Std\ Medium.otf") format("opentype");
+        font-weight: 550;
+        font-style: normal;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <title>Home</title>
+  </head>
+  <body
+    id="top"
+    class="bg-[url(./assets/bgfiller.avif)] bg-fixed bg-no-repeat bg-cover text-white"
+  >
+    <header
+      class="bg-black/70 flex gap-2 items-center relative font-[LOLFont] border-b-2 border-dashed border-mist-500"
+    >
+      <div>
+        <img
+          src="./assets/logo.png"
+          width="100"
+          class="p-3"
+          alt="Timberline Esports Logo"
+        />
+      </div>
+      <div>
+        <h1 class="text-4xl align-middle hidden md:block">
+          Timberline Esports
+        </h1>
+      </div>
+      <div
+        class="absolute right-2 bg-linear-180 from-[#c8aa6d] to-[#7a5c28] hover:bg-linear-180 hover:from-[#f1e8da] hover:to-[#c89d3e] mr-2.5 hover:shadow-[0_0_45px_rgba(255,255,255,0.4)] hover:brightness-110 hover:scale-[1.02]"
+      >
+        <div class="bg-linear-360 from-[#2f2517] to-[#573f1f] m-0.5 border-0.5">
+          <a href="https://www.leagueoflegends.com/en-us/"
+            ><button
+              class="p-2 text-[#cdbe91] hover:text-white text-2xl uppercase"
+            >
+              Play Now!
+            </button></a
+          >
+        </div>
+      </div>
+    </header>
+    <section class="flex justify-center items-center md:min-h-screen p-5">
+      <div
+        class="bg-black/85 border-2 border-dashed border-mist-500 rounded-2xl w-full max-w-6xl p-10 text-center flex flex-col items-center gap-3"
+      >
+        <img
+          src="./assets/logo.png"
+          class="max-w-50 pt-5"
+          alt="Timberline Esports Logo"
+        />
+        <h2 class="text-4xl font-bold">Welcome!</h2>
+        <p class="text-xl md:pr-20 md:pl-20 md:p-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="pt-2 md:pb-2">
+          <button
+            class="p-2 pr-5 pl-5 bg-[#0033CC] rounded-xl text-2xl font-bold"
+          >
+            Join Today!
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black p-10 border-t-2 border-dashed border-mist-500">
+      <div class="mb-8">
+        <h2 class="text-4xl text-center font-bold">Who are we?</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+        <div
+          class="text-white flex-1 flex flex-col gap-2.5 items-center text-center border-2 border-dashed border-mist-500 rounded-2xl p-5"
+        >
+          <h3 class="text-2xl font-bold">Our Values</h3>
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div
+          class="text-white flex-1 flex flex-col gap-2.5 items-center text-center border-2 border-dashed border-mist-500 rounded-2xl p-5"
+        >
+          <h3 class="text-2xl font-bold">Our Values</h3>
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div
+          class="text-white flex-1 flex flex-col gap-2.5 items-center text-center border-2 border-dashed border-mist-500 rounded-2xl p-5"
+        >
+          <h3 class="text-2xl font-bold">Our Values</h3>
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black p-10">
+      <div class="mb-8">
+        <h2 class="text-4xl text-center font-bold">How do you play?</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 grid-rows-1 gap-20">
+        <div
+          class="text-white flex flex-col gap-2.5 items-center text-center border-2 border-dashed border-mist-500 rounded-2xl p-5"
+        >
+          <h3 class="text-2xl font-bold">Contact a Coach</h3>
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div
+          class="text-white flex flex-col gap-2.5 items-center text-center border-2 border-dashed border-mist-500 rounded-2xl p-5"
+        >
+          <h2 class="text-2xl font-bold">
+            Show up, bring a good attuidude, and follow the rules
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-black pl-10 pr-10 pt-15">
+      <div class="md:flex-row flex-col flex gap-10">
+        <div class="flex-initial wrap-anywhere">
+          <h2 class="text-6xl md:text-8xl uppercase font-black leading-none">
+            Timberline Esports
+          </h2>
+        </div>
+        <div class="flex-auto flex flex-col mb-2.5">
+          <div>
+            <h2 class="md:pt-2.5 text-2xl font-bold underline">Legend</h2>
+          </div>
+          <div class="flex flex-row">
+            <nav>
+              <ul class="">
+                <li class="mb-0.5"><a href="#top">Back to top</a></li>
+                <li>
+                  <a href="https://dillizplaz.vercel.app/"
+                    >Back to Portfillo home page</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p class="font-extralight px-2.5 py-2.5">Made with love in Canada 🩷</p>
+    </footer>
+  </body>
+</html>
