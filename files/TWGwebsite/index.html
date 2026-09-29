@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Document</title>
+  </head>
+  <body class="text-white/100 bg-[#56003b] font-serif">
+    <header class="flex gap-10 p-2.5 relative items-center">
+      <div>
+        <h1 class="text-4xl text-white/100 font-bold">The Weird Party</h1>
+      </div>
+    </header>
+    <hr />
+
+    <section
+      class="bg-[url('assets/image.png')] bg-cover bg-center h-screen relative"
+    >
+      <div class="absolute inset-0 backdrop-blur-sm bg-black/20"></div>
+
+      <div class="relative z-10 flex flex-col h-full pt-10">
+        <h2 class="text-center p-2 pt-2.5 font-bold text-4xl mb-4">Policies</h2>
+
+        <div
+          class="relative m-2.5 overflow-hidden border-1 rounded-lg bg-black/50 mx-auto w-full max-w-5xl"
+        >
+          <button
+            id="prevBtn"
+            class="absolute left-10 top-1/2 -translate-y-1/2 z-10 px-3 py-2 shadow cursor-pointer border-1 rounded-lg"
+          >
+            Prev
+          </button>
+
+          <div
+            id="track"
+            class="flex items-start transition-all duration-500 ease-in-out"
+          >
+            <div
+              class="min-w-full flex flex-col justify-start items-center p-12 border-white"
+            >
+              <h2 class="text-2xl mb-8 text-white font-bold">
+                Homelessness & Housing
+              </h2>
+              <p class="w-full max-w-2xl text-center text-lg text-white">
+                The homeless population in Canada is roughly 65,000 people as of
+                the end of 2025; this level is 59% higher than counts from
+                2020–2022, showing a significant rise since the pandemic. 65,000
+                people may not be much compared to the overall population of
+                39.19 million people, but even then, it is still an issue that
+                needs to be addressed instead of being pushed off like previous
+                years. Here at TWP, we can and will offer grants to private
+                sectors like Forestry, to give open programs where they will
+                accept homeless people, supplying them with housing, food, pay
+                and rehab.
+                <br />
+                We also want lower housing costs across Canada. We will do this
+                by giving grants to provinces to build low-income apartments and
+                more stable housing, like condos and large family homes.
+              </p>
+            </div>
+
+            <div
+              class="min-w-full h-auto flex flex-col justify-start items-center p-12 border-white"
+            >
+              <h2 class="text-2xl mb-8 text-white font-bold">Immigration</h2>
+              <p class="w-full max-w-2xl text-center text-lg text-white">
+                Immigration in Canada is going up every day, exceeding 400,000
+                people every year; at least 8.3 million people from all over the
+                world have legally immigrated to Canada, that being 23% of
+                Canada's population. We are slowly running out of room in our
+                country, and that is an increasing issue, so we at TWP plan to
+                reduce immigration rates by slowing immigration into the
+                country, while also letting refugees in.
+                <br />
+                <br />
+                <strong>Public Relations</strong>
+                <br />
+                Canada needs friends. Recently, with our breakup with the
+                States, we need to find new people to share our rich resources
+                with. TWP will lead Canada to new trade deals with some of our
+                closest friends to bring lower prices and better deals for all
+                Canadians. Though our current government is doing a good job at
+                this, we would super push this. According to our plan we would
+                see better relations within 6 months
+              </p>
+            </div>
+
+            <div
+              class="min-w-full h-auto flex flex-col justify-start items-center p-12 border-white"
+            >
+              <h2 class="text-2xl mb-8 text-white font-bold">Taxes</h2>
+              <p class="w-full max-w-2xl text-center text-lg text-white">
+                As of 2026, taxes keep going up, now being at 14%. For the less
+                fortunate people of Canada, this is a big problem, so to solve
+                this problem, we will tax the poor less and tax the rich more,
+                but instead of taxing the rich based on what they have on hand
+                and in accounts, we will tax their net worth and stocks.
+              </p>
+            </div>
+
+            <div
+              class="min-w-full h-auto flex flex-col justify-start items-center p-12 border-white"
+            >
+              <h2 class="text-2xl mb-8 text-white font-bold">Healthcare</h2>
+              <p class="w-full max-w-2xl text-center text-lg text-white">
+                We are aware of the lack of good healthcare, with there being
+                only roughly 0.24–0.26% of the total population who are doctors.
+                This means that for every 1,000 Canadians, about 2 to 2.5 are
+                doctors, so we have come up with an idea to make healthcare more
+                accessible and to advertise it. We will make student loans for
+                doctors lower to make it easier to pay off so that people can be
+                paid more and be paid sooner
+              </p>
+            </div>
+          </div>
+
+          <button
+            id="nextBtn"
+            class="absolute right-10 top-1/2 -translate-y-1/2 z-10 px-3 py-2 shadow cursor-pointer border-1 rounded-lg"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-[#56003b]">
+        <h2 class="text-center text-2xl pt-5 font-bold">Who is Garen?</h2>
+        <div class="flex">
+          <div class="m-2.5 border-2 rounded-lg border-white text-lg">
+            <p class="p-2.5">
+              <img 
+            src="./assets/garen.png" 
+            alt="Garen"
+            class="block mx-auto mb-4 w-40 rounded-md sm:float-right sm:ml-4 sm:mb-2 sm:w-32 md:hidden" 
+          />
+              The reason I was chosen to become the leader of this party is
+              because of my spectacular background in construction and the fact
+              that I was the mayor of a small city down south for 15 years. When
+              I turned 20 years old, I already had 13 years of experience in
+              contracting in my father's company, by that point. On the topic of
+              family, my mother and I got brutally evicted from our house
+              because we couldn't pay the rent, since it had grown with
+              inflation to an imperceivable measure. Creating an amount of one
+              hundred dollars and one cent a month of pay, causing us to become
+              homeless and have my mother die in my arms, being mauled by a
+              street dog, her limbs being ripped off one by one. I was in the
+              foster system until my dad found me. I began being trained as a
+              contractor from the age of 7, as previously stated. From age 20 to
+              24 I went to Harvard Law for my degree in law, doctoring, computer
+              engineering, and alchemy. When my dad died, he left me the
+              company, and I doubled its income, so that's why I should totally
+              be your super awesome secularly extra-large mayor rule. Also known
+              as the prime minister.
+            </p>
+          </div>
+          <div>
+            <img src="./assets/garen.png" class="md:block hidden"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex items-center text-red-500 m-8 w-48">
+        <!-- The line -->
+        <div class="flex-grow h-[2px] bg-current"></div>
+        <!-- The arrowhead -->
+        <svg class="w-3 h-3 -ml-1 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+      
+  </body>
+  <script src="carousel.js"></script>
+</html>
